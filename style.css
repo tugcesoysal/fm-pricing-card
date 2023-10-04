@@ -4,6 +4,11 @@ html {
   font-size:16px;
 }
 
+*, *:before, *:after {
+  box-sizing:inherit;
+}
+
+
 h2, h4, p {
   margin:0;
 }
@@ -12,13 +17,9 @@ body {
   padding:20px;
 }
 
-*, *:before, *:after {
-  box-sizing:inherit;
-}
 
 #card {
-  width:600px;
-  height:400px;
+ 
   box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
   border-radius:5px;
   overflow:hidden;
@@ -40,7 +41,7 @@ body {
 
 #bottom-left-section {
   display:inline-block;
-   width:50%;
+   width:100%;
   height: 100%;
   vertical-align:top;
   background-color:#2ab2af;
@@ -49,7 +50,7 @@ body {
 
 #bottom-right-section {
   display:inline-block;
-  width:50%;
+  width:100%;
   height: 100%;
    background-color:#2ebfbd;
   vertical-align:top;
@@ -123,6 +124,18 @@ ul {
 
 li {
   margin-bottom:5px;
+}
+
+@media(min-width:576px) {
+  #card {
+  width:550px;
+  height:400px;
+}
+  
+  #bottom-left-section, #bottom-right-section {
+    width:50%;
+  }
+  
 }
 
 
