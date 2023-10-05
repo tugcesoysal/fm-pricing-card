@@ -37,24 +37,22 @@ body {
   width:100%;
   height: 55%;
   color:white;
+  display:flex;
+  flex-direction:column;
 }
 
 #bottom-left-section {
-  display:inline-block;
-   width:100%;
   height: 100%;
-  vertical-align:top;
   background-color:#2ab2af;
   padding:25px;
+  flex-basis:50%;
 }
 
 #bottom-right-section {
-  display:inline-block;
-  width:100%;
   height: 100%;
    background-color:#2ebfbd;
-  vertical-align:top;
   padding:25px;
+  flex-basis:50%;
 }
 
 #top-section h2 {
@@ -100,20 +98,19 @@ button:hover {
   margin-bottom:40px;
 }
 
-#price-frequency, #price{
-  display: inline-block;
+#price-container {
+  margin-bottom:10px;
+  display:flex;
+  align-items:center;
 }
+
 #price-frequency {
-  position:relative;
-  top:-3px;
   font-size:0.8rem;
   opacity:0.7;
   margin-left:5px;
 }
 
-#price-container {
-  margin-bottom:10px;
-}
+
 
 ul {
   padding:0;
@@ -131,14 +128,10 @@ li {
   width:550px;
   height:400px;
 }
-  
-  #bottom-left-section, #bottom-right-section {
-    width:50%;
+  #bottom-section {
+    flex-direction:row;
   }
+ 
   
 }
-
-
-
-
 
