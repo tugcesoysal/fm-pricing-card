@@ -5,7 +5,7 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing:inherit;
+  box-sizing:border-box;
 }
 
 
@@ -19,10 +19,10 @@ body {
 
 
 #card {
- 
   box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
   border-radius:5px;
-  overflow:hidden;
+  display: flex;
+  flex-direction: column;
   
 }
 
@@ -30,6 +30,7 @@ body {
   width:100%;
   height: 45%;
   padding:25px;
+  margin-bottom: 20px;
   
 }
 
@@ -127,6 +128,7 @@ li {
   #card {
   width:550px;
   height:400px;
+  margin: 10% auto;
 }
   #bottom-section {
     flex-direction:row;
